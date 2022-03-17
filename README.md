@@ -1,0 +1,2 @@
+# ama
+ Site Amora
