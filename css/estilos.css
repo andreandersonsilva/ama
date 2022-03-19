@@ -7,16 +7,24 @@ body{
     margin:0;
 
     font-family: Arial, Arial, Helvetica, sans-serif;
-    font-size: 14px;
+    font-size: 1em;
 }
 
 /*------------*\
     CABECALHO
 \*------------*/
 
-header{
+.layout-cabecalho{
     height: 106px;
     border-bottom: 1px solid #ccc;
+}
+
+.layout-cabecalho--home{
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 1;
 }
 
 h1{
@@ -39,6 +47,7 @@ header img{
 article{
     background-color: green;
     padding: 0;
+    margin-top:103px;
 }
 
 
@@ -72,4 +81,20 @@ footer{
 
 .clearfix{
     clear: both;
+}
+
+
+/*------------*\
+   RODAPE
+\*------------*/
+
+.layout-rodape{
+    padding: 40px 0;
+
+    color: black;
+    text-align: center;
+    
+    font-size:0.7em;
+
+    background-color: #f6eeff;
 }
