@@ -44,6 +44,31 @@ header img{
     background-color: #f6eeff;
 }
 
+/*------------*\
+   CABECALHO
+\*------------*/
+
+.navegacao__menu{
+    float: right;
+}
+
+/*------------*\
+ BOTAO-CHAVEADOR - CONTINUAR ESTA PARTE
+\*------------*/
+
+.botao-chaveador{
+    width: 27px;
+    height: 29px;
+    border: 0;
+
+    background-image: url("../imagens/menu-tra.png");
+}
+
+
+/*------------*\
+   PENDENTE CONTEUDO E AJUSTES
+\*------------*/
+
 article{
     background-color: green;
     padding: 0;
@@ -84,12 +109,19 @@ footer{
 }
 
 
+
+
 /*------------*\
    RODAPE
 \*------------*/
 
 .layout-rodape{
-    padding: 40px 0;
+    position: relative;
+
+    padding: 0;
+    
+
+    height: 180px;
 
     color: black;
     text-align: center;
@@ -98,3 +130,153 @@ footer{
 
     background-color: #f6eeff;
 }
+
+
+.coluna1-rodape{
+    float: left;
+    width: 50%;
+
+    
+    height: 120px;
+
+    
+    background-color: #f6eeff;
+}
+
+.coluna2-rodape{
+    
+    float: right;
+    width: 50%;
+
+    height: 120px;
+
+    
+    background-color: #f6eeff;
+}
+
+.logo__rodape{
+    position:relative;
+    left: -180px;
+    top:13px;
+}
+
+.rede-facebook{
+
+    position: relative;
+    left:150px;
+    top:28px;
+    
+    
+
+}
+
+.rede-instagram{
+
+    position: relative;
+    left:150px;
+    top:28px;
+    
+
+}
+
+
+@media(max-width: 900px){
+    
+    .coluna1-rodape {
+        width:100%;
+    }
+
+    .coluna2-rodape{
+        width: 100%;
+        height: 100px;
+        
+    }
+
+    .logo__rodape{
+        position:relative;
+        left: auto;
+        top:13px;
+    }
+
+    .rede-facebook{
+
+        position: relative;
+        left:auto;
+        top:15px;
+        
+        
+    
+    }
+    
+    .rede-instagram{
+    
+        position: relative;
+        left:auto;
+        top:15px;
+        
+    
+    }
+
+    
+}
+
+.layout-rodape-inferior{
+      
+    position: absolute;
+    bottom:0;
+    border-top: 1px solid rgb(185, 185, 185);
+    
+    padding: 10px 0;
+
+    width: 100%;
+    height: 60px;
+    padding: 0;
+    background-color: #d1a9ff;
+}
+
+
+.direitos-autorais{
+    position: relative;
+    top: 12px;
+    
+}
+
+
+@media(max-width: 900px){
+    .layout-rodape-inferior{
+      
+        position: absolute;
+        bottom:-100px;     
+        
+        padding: 10px 0;
+    
+        width: 100%;
+        height: 60px;
+        padding: 0;
+        background-color: #d1a9ff;
+    }
+    
+    
+    .direitos-autorais{
+        position: relative;
+        height: 40px;
+        top: 22px;
+        margin:0;
+        
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
