@@ -109,7 +109,10 @@ header img{
     .menu__item{
         
         display:inline-block;
-       
+        margin: -120px;
+        top: 100px;
+        left: 100px;    
+        
         
         
         
@@ -327,7 +330,7 @@ footer{
 }
 
 
-@media(max-width: 900px){
+@media(max-width: 991px){
     .layout-rodape-inferior{
       
         position: absolute;
