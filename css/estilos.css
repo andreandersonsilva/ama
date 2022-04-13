@@ -49,6 +49,7 @@ header img{
    NAVEGACAO
 \*------------*/
 .navegacao__menu{
+    
     line-height: 106px;
     width: 60px;
     float: right;
@@ -79,13 +80,13 @@ header img{
         bottom:0;
     
         padding: 20px;
-        width: 200px;
+        width: 150px;
        
         border-right: 1px solid #eee;
     
            
         background-color: #fbfbfb;
-    
+        
        
         
     }
@@ -106,13 +107,14 @@ header img{
 
 @media(min-width:992px){
     .menu__item{
+        
         display:inline-block;
-        margin: -100;
-        padding-right: 20px;
-    }
-
-    .menu__item:last-of-type{
-        padding-right: 0;
+       
+        
+        
+        
+        
+        
     }
 
     a{
@@ -173,7 +175,7 @@ article{
     width: 48%;
 }
 
-@media(max-width: 900px){
+@media(max-width: 991px){
     .coluna1 {
         width:90%;
     }
@@ -263,7 +265,7 @@ footer{
 }
 
 
-@media(max-width: 900px){
+@media(max-width: 991px){
     
     .coluna1-rodape {
         width:100%;
