@@ -5,7 +5,6 @@
 body{
 
     margin:0;
-
     font-family: Arial, Arial, Helvetica, sans-serif;
     font-size: 1em;
 }
@@ -16,10 +15,12 @@ body{
 
 .layout-cabecalho{
     height: 106px;
+    
     border-bottom: 1px solid #ccc;
 }
 
 .layout-cabecalho--home{
+    
     position: fixed;
     top: 0;
     right: 0;
@@ -45,23 +46,105 @@ header img{
 }
 
 /*------------*\
-   CABECALHO
+   NAVEGACAO
 \*------------*/
-
 .navegacao__menu{
+    line-height: 106px;
+    width: 60px;
     float: right;
+    
 }
 
+
 /*------------*\
- BOTAO-CHAVEADOR - CONTINUAR ESTA PARTE
+    MENU
+\*------------*/
+
+.menu{
+    
+    margin: 0;
+    
+    font-size: 1rem;
+
+    list-style: none;
+    
+}
+
+@media(max-width: 991px){
+
+    .menu{
+        position: fixed;
+        top:0;
+        left:0;
+        bottom:0;
+    
+        padding: 20px;
+        width: 200px;
+       
+        border-right: 1px solid #eee;
+    
+           
+        background-color: #fbfbfb;
+    
+       
+        
+    }
+
+    .menu__item{
+
+        display:block;
+
+        line-height: 3;
+    }
+
+    a{
+        text-decoration: none;
+    }
+
+}
+
+
+@media(min-width:992px){
+    .menu__item{
+        display:inline-block;
+        margin: -100;
+        padding-right: 20px;
+    }
+
+    .menu__item:last-of-type{
+        padding-right: 0;
+    }
+
+    a{
+        text-decoration: none;
+    }
+}    
+
+/*------------*\
+ BOTAO-CHAVEADOR 
 \*------------*/
 
 .botao-chaveador{
-    width: 27px;
-    height: 29px;
-    border: 0;
+    
+    width:24px;
+    height:24px;
+    border:0;
+    
 
-    background-image: url("../imagens/menu-tra.png");
+    background: none;
+    background-image: url('../imagens/bars.png');
+
+
+    /*Retirar borda que aparece ao redor quando selecionad*/
+    outline: none;
+
+}
+
+/*Exibe o botão para aparelhos pequenos quando a tela chegar no tamanho informado abaixo*/
+@media(min-width: 992px){
+    .botao-chaveador{
+        display:none;
+    }
 }
 
 
